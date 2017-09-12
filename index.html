@@ -5,95 +5,53 @@
 	<title>Caleb Hayashida</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="http://calebhayashida.com/media/css/styles.css">
 	<link rel="stylesheet" type="text/css" href="http://calebhayashida.com/media/bootstrap-3.3.7-dist/css/bootstrap.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-	<script type="text/javascript" src="http://calebhayashida.com/media/js/jquery-3.2.0.min.js"></script>
-	<script type="text/javascript" src="http://calebhayashida.com/media/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 </head>
 
 <body>
 
-<!-- BEGIN Modal markup -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Caleb Hayashida</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" target="_blank" href="http://hostilelegacy.com">blog</a>
+        <a class="nav-item nav-link" target="_blank" href="http://music.calebhayashida.com">music</a>
+        <a class="nav-item nav-link" onClick="openModalContact()" href="#">contact</a>
+        <a class="nav-item nav-link" target="_blank" href="http://github.com/santeyio">github</a>
+        <a class="nav-item nav-link" onClick="openModalAbout()" href="#">about</a>
+        <a class="nav-item nav-link" href="#">portfolio</a>
+      </div>
+    </div>
+  </nav>
 
-<!-- Contact -->
-<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-	<div class="modal-dialog" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title" id="myModalLabel">Contact</h4>
-			</div>
-			<div class="modal-body text-center">
-				<!--
-				This is an image to make it harder for a computer to read.
-				<img src="http://calebhayashida.com/media/img/contact_info.png"/>
-				-->
-				<h3>santeyio@gmail.com</h3>
-				<br/>
-				<h3>1-860-292-0511</h3>
-				<p>phone | whatsapp | viber</p>
-				<br/>
-			</div>
-		</div>
-	</div>
+<div class="container-fluid lato">
+
+	<div class="row justify-content-center" id="main">
+    <div class="col-12 text-center">
+      <img src="/media/img/caleb_portrait_feathered.png"/>
+      <br/><br/>
+    </div>
+    <div class="col-12 text-center">
+      <h1 class="">Caleb Hayashida</h1>
+      <!--<h3 class="">Caleb Hayashida</h3>-->
+      <br/>
+    </div>
+    <div class="col-8">
+      <p>
+      Hey there! I'm Caleb Hayashida. The most important thing about me is that I'm a follower of Jesus. I'm a programmer and professional learner, and when I'm not programming for work or fun you'll most likely find me experimenting in the kitchen or writing, recording, and producing music. I also enjoy perfecting my tea brewing and appreciation skills, experiencing great beer and whiskey, traveling to new places and talking to interesting people. Of course I can't leave out my love pipes, cigars, and reading: classical literature, philosophy, monastic literature, and fantasy (not an exhaustive list by any means). 
+      </p>
+    </div>
+  </div>
 </div>
 
-<!-- About -->
-<div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-	<div class="modal-dialog" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title" id="myModalLabel">About</h4>
-			</div>
-			<div class="modal-body text-center">
-				<br/>...<br/>&nbsp;
-			</div>
-		</div>
-	</div>
-</div>
-
-<!-- END Modal markup -->
-
-
-<div class="container lato">
-
-	<div class="row" id="main">
-		<div class="col-md-2">
-			&nbsp;
-		</div>
-
-		<div class="col-md-8 text-center">
-			<h1 class="main-header">Caleb Hayashida</h1>
-
-			<div class="row">
-
-				<h3>
-				<a target="_blank" href="http://hostilelegacy.com">blog</a> | 
-				<a target="_blank" href="http://music.calebhayashida.com">music</a> | 
-				<a onClick="openModalContact()" href="#">contact</a> | 
-				<a target="_blank" href="http://github.com/santeyio">github</a> | 
-				<a onClick="openModalAbout()" href="#">about</a>
-				</h3>
-
-			</div>
-		</div>
-
-		<div class="col-md-2">
-			&nbsp;&nbsp;
-		</div>
-	</div>
-</div>
-
-<script>
-function openModalContact(){
-	$('#contactModal').modal('show');
-}
-function openModalAbout(){
-	$('#aboutModal').modal('show');
-}
-</script>
+<script type="text/javascript" src="http://calebhayashida.com/media/js/jquery-3.2.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
 </body>
 
