@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Caleb Hayashida</title>
+  <title>Caleb Hayashida - {% block title %}{% endblock %}</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -38,20 +38,8 @@
   </nav>
 
 <div id="home" class="container-fluid lato">
-
-	<div class="row justify-content-center" id="main">
-    <div class="col-12 text-center">
-      <img class="img-fluid" src="/static/img/caleb_portrait_color_feathered.png"/>
-      <br/><br/>
-      <h1 class="">Caleb Hayashida</h1>
-      <br/>
-    </div>
-    <div class="col-md-8">
-      <p>
-      Hey there! I'm Caleb Hayashida. The most important thing about me is that I'm a follower of Jesus. I'm a programmer and professional learner, and when I'm not programming for work or fun you'll most likely find me experimenting in the kitchen or writing, recording, and producing music. I also enjoy perfecting my tea brewing and appreciation skills, experiencing great beer and whiskey, traveling to new places and talking to interesting people. Of course I can't leave out my love of pipes, cigars, and reading: classical literature, philosophy, monastic literature, and fantasy (not an exhaustive list by any means). 
-      </p>
-    </div>
-  </div>
+  {% block body %}
+  {% endblock %}
 </div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
