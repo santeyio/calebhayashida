@@ -6,52 +6,81 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="http://calebhayashida.com/media/css/styles.css">
-	<link rel="stylesheet" type="text/css" href="http://calebhayashida.com/media/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/media/css/styles.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 </head>
 
 <body>
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Caleb Hayashida</a>
+    <a class="navbar-brand" onClick="toggle_pages('home')" href="#">Caleb Hayashida</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-item nav-link" target="_blank" href="http://hostilelegacy.com">blog</a>
-        <a class="nav-item nav-link" target="_blank" href="http://music.calebhayashida.com">music</a>
-        <a class="nav-item nav-link" onClick="openModalContact()" href="#">contact</a>
-        <a class="nav-item nav-link" target="_blank" href="http://github.com/santeyio">github</a>
-        <a class="nav-item nav-link" onClick="openModalAbout()" href="#">about</a>
-        <a class="nav-item nav-link" href="#">portfolio</a>
+        <!--<a class="nav-item nav-link" onClick="toggle_pages('contact')" href="#">contact</a>-->
+        <a class="nav-item nav-link" onClick="toggle_pages('portfolio')" href="#">portfolio</a>
+      </div>
+      <div class="navbar-nav ml-auto">
+        <b class="nav-item nav-link">Other cool stuff I do:</b>
+        <a class="nav-item nav-link" target="_blank" href="http://github.com/santeyio">
+          <img src="/media/img/Octocat-64px.png" class="icon">
+          <!--github-->
+        </a>
+        <a class="nav-item nav-link" target="_blank" href="http://hostilelegacy.com">
+          <img src="/media/img/rss_feed_icon-64px.png" class="icon">
+          <!--blog-->
+        </a>
+        <a class="nav-item nav-link" target="_blank" href="http://music.calebhayashida.com/index.php/albums/">
+          <img src="/media/img/musical-note-2x.png" class="icon">
+          <!--music-->
+        </a>
       </div>
     </div>
   </nav>
 
-<div class="container-fluid lato">
+<div id="home" class="container-fluid lato">
 
 	<div class="row justify-content-center" id="main">
     <div class="col-12 text-center">
-      <img src="/media/img/caleb_portrait_feathered.png"/>
+      <img class="img-fluid" src="/media/img/caleb_portrait_color_feathered.png"/>
       <br/><br/>
-    </div>
-    <div class="col-12 text-center">
       <h1 class="">Caleb Hayashida</h1>
-      <!--<h3 class="">Caleb Hayashida</h3>-->
       <br/>
     </div>
     <div class="col-8">
       <p>
-      Hey there! I'm Caleb Hayashida. The most important thing about me is that I'm a follower of Jesus. I'm a programmer and professional learner, and when I'm not programming for work or fun you'll most likely find me experimenting in the kitchen or writing, recording, and producing music. I also enjoy perfecting my tea brewing and appreciation skills, experiencing great beer and whiskey, traveling to new places and talking to interesting people. Of course I can't leave out my love pipes, cigars, and reading: classical literature, philosophy, monastic literature, and fantasy (not an exhaustive list by any means). 
+      Hey there! I'm Caleb Hayashida. The most important thing about me is that I'm a follower of Jesus. I'm a programmer and professional learner, and when I'm not programming for work or fun you'll most likely find me experimenting in the kitchen or writing, recording, and producing music. I also enjoy perfecting my tea brewing and appreciation skills, experiencing great beer and whiskey, traveling to new places and talking to interesting people. Of course I can't leave out my love of pipes, cigars, and reading: classical literature, philosophy, monastic literature, and fantasy (not an exhaustive list by any means). 
       </p>
     </div>
   </div>
 </div>
+<div id="contact" class="container-fluid lato" style="display: none;">
+  <p>Contact page</p>
+</div>
+<div id="portfolio" class="container-fluid lato" style="display: none;">
+  <p>Portfolio page</p>
+</div>
 
 <script type="text/javascript" src="http://calebhayashida.com/media/js/jquery-3.2.0.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<script>
+  var page_ids = [
+    'home',
+    'contact',
+    'portfolio',
+  ];
+  function toggle_pages(page_id){
+    for (var page of page_ids){
+      if (page == page_id){
+        $('#'+page).delay(200).fadeIn(200);
+      } else {
+        $('#'+page).fadeOut(200);
+      }
+    }
+  }
+</script>
 
 </body>
 

@@ -11,6 +11,15 @@
 	font-family: 'Raleway', sans-serif;
 }
 
+.icon {
+  height: 20px;
+}
+
+/*.pull-right {*/
+  /*position: absolute;*/
+  /*right: 100px;*/
+/*}*/
+
 .quantify { 
 	font-family: 'Quantify', serif; 
 }
@@ -20,5 +29,5 @@
 }
 
 #main {
-	padding-top:6%;
+	padding-top:1%;
 }
