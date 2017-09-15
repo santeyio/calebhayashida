@@ -2,8 +2,50 @@
 
 {% block title %} Portfolio {% endblock %}
 
+{% block coolstuff_active %}active{% endblock %}
+
 {% block body %}
 	<div class="row justify-content-center" id="main">
     <h1>Cool stuff I've worked on</h1>
+  </div>
+
+  <br/>
+  <hr/>
+  <br/>
+
+  <div class="row justify-content-center" id="phantastes">
+    <div class="col-md-4 text-center">
+      <h1 class="">Phantastes Album</h1>
+      <img class="img-fluid portfolio-img" src="/static/img/phantastes-cover.png"/>
+    </div>
+    <div class="col-md-8 align-self-center">
+      <p>
+      This is the last album that I produced. It's a concept album
+      based on one of my favorite books by author
+      <a href="https://en.wikipedia.org/wiki/George_MacDonald">George MacDonald</a>.
+      I play all the instruments, do all the singing, and mix all
+      the music in Pro Tools. You can check it out on
+      <a href="https://open.spotify.com/album/2eTC5GosiC9M9uOdUYRfw2">spotify</a>, 
+      <a href="https://www.amazon.com/dp/B06XBGJPTC/ref=sr_1_1?s=dmusic&ie=UTF8&qid=1488143587&sr=1-1-mp3-albums-bar-strip-0&keywords=caleb+hayashida">amazon</a>,
+      <a href="https://itunes.apple.com/us/album/phantastes/id1209820121">itunes</a>, 
+      or wherever you listen to music. 
+      </p>
+    </div>
+  </div>
+
+  <br/>
+  <hr/>
+  <br/>
+
+  <div class="row justify-content-center" id="spotifyvisual">
+    <div class="col-md-4 text-center">
+      <h1 class="">Spotify Lyrics Data Visualizations</h1>
+      <img class="img-fluid portfolio-img" src="/static/img/spotify-visualizations.png"/>
+    </div>
+    <div class="col-md-8 align-items-center">
+      <p>
+        Some text here.
+      </p>
+    </div>
   </div>
 {% endblock %}

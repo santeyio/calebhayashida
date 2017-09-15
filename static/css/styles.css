@@ -22,3 +22,7 @@
 #main {
 	padding-top:1%;
 }
+
+.portfolio-img {
+  max-width: 400px;
+}

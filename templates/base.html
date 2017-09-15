@@ -12,32 +12,32 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="/">Caleb Hayashida</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-item nav-link" href="/contact">contact</a>
-        <a class="nav-item nav-link" href="/portfolio">portfolio</a>
+        <a class="nav-item nav-link {% block contact_active %}{% endblock %}" href="/contact">contact</a>
+        <a class="nav-item nav-link {% block coolstuff_active %}{% endblock %}" href="/portfolio">cool stuff I've done</a>
       </div>
       <div class="navbar-nav ml-auto">
         <b class="nav-item nav-link">Cool stuff I do:</b>
         <a class="nav-item nav-link" target="_blank" href="http://github.com/santeyio">
-          <img src="/static/img/Octocat-64px.png" class="icon">
-        </a>
-        <a class="nav-item nav-link" target="_blank" href="http://hostilelegacy.com">
-          <img src="/static/img/rss_feed_icon-64px.png" class="icon">
+          <img src="/static/img/github-mark-64px.png" class="icon">
         </a>
         <a class="nav-item nav-link" target="_blank" href="http://music.calebhayashida.com/index.php/albums/">
           <img src="/static/img/musical_note.ico" class="icon">
+        </a>
+        <a class="nav-item nav-link" target="_blank" href="http://hostilelegacy.com">
+          <img src="/static/img/rss_feed_icon-64px.png" class="icon">
         </a>
       </div>
     </div>
   </nav>
 
-<div id="home" class="container-fluid lato">
+<div id="home" class="container-fluid lato pt-5">
   {% block body %}
   {% endblock %}
 </div>
