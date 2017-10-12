@@ -1,6 +1,11 @@
 @font-face {
-	font-family: 'Quantify';
-	src: url('http://calebhayashida.com/media/fonts/quantify_boldv2-6.ttf');
+  font-family: 'Quantify';
+  src: url('http://calebhayashida.com/static/fonts/quantify_boldv2-6.ttf');
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('http://calebhayashida.com/static/fonts/HELR45W.ttf');
 }
 
 .lato {
@@ -9,6 +14,10 @@
 
 .raleway {
 	font-family: 'Raleway', sans-serif;
+}
+
+.helvetica {
+  font-family: 'Helvetica', sans-serif;
 }
 
 .icon {
@@ -25,4 +34,11 @@
 
 .portfolio-img {
   max-width: 400px;
+}
+
+.main-text-stretch {
+  letter-spacing: 1px;
+}
+.text-stretch {
+  letter-spacing: 4px;
 }
