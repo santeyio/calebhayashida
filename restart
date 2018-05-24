@@ -1,0 +1,4 @@
+#!/bin/bash
+
+kill `cat gunicorn.pid`;
+../bin/gunicorn -D --bind 127.0.0.1:5502 -p gunicorn.pid app:app;
